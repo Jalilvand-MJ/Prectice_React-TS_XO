@@ -1,0 +1,85 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        "eslint:all",
+        "plugin:react/all"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "max-len": "off",
+        "max-lines-per-function": "off",
+        "sort-imports": "off",
+        "id-length": "off",
+        "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+        "function-paren-newline": "off",
+        "padded-blocks": "off",
+        "dot-location": "off",
+        "array-element-newline": "off",
+        "no-ternary": "off",
+        "no-magic-numbers": "off",
+        "multiline-ternary": ["error", "always-multiline"],
+        "prefer-destructuring": ["error", {
+            "array": false,
+            "object": true
+        }],
+        "no-extra-parens": "off",
+        "function-call-argument-newline": ["error", "consistent"],
+        "no-plusplus": "off",
+        "no-param-reassign": "off",
+        "sort-vars": "off",
+        "guard-for-in": "off",
+        "quote-props": ["error", "consistent", { "numbers": false }],
+        "one-var": ["error", "consecutive"],
+        "max-params": ["off"],
+        "curly": ["error", "multi"],
+        "no-unused-vars": "off",
+        "no-warning-comments": "off",
+        "max-statements": "off",
+        "no-negated-condition": "off",
+        "init-declarations": "off",
+        "@typescript-eslint/no-unused-vars": ["error"],
+        "react/jsx-filename-extension": ["error", { "extensions": [".tsx", ".jsx"] }],
+        "react/jsx-max-depth": "off",
+        "react/jsx-newline": "off",
+        "react/jsx-indent-props": "off",
+        "react/jsx-closing-tag-location": "off",
+        "react/jsx-no-literals": "off",
+        "react/jsx-closing-bracket-location": ["error", "after-props"],
+        "react/jsx-no-bind": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/no-array-index-key": "off",
+        "react/button-has-type": "off",
+        "react/jsx-pascal-case": "off",
+        "react/require-default-props": "off",
+        "react/destructuring-assignment": "off",
+        "react/jsx-handler-names": "off"
+    },
+    "ignorePatterns": [
+        "postcss.config.js",
+        "tailwind.config.js",
+        "server.js",
+        "src/setupTests.ts",
+        "src/reportWebVitals.ts",
+        "src/react-app-env.d.ts"
+    ]
+}
